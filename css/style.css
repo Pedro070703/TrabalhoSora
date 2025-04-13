@@ -1,0 +1,265 @@
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url("../imagens/cenario.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
+  font-size: 1.1rem;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+header {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-bottom: 3px solid #ff3c00;
+  width: 100%;
+  z-index: 1;
+}
+
+header img {
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  margin-left: 100px;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff3c00;
+  transform: scale(1.1);
+}
+
+nav a.jogar {
+  color: #ff3c00;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: rgba(255, 60, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+nav a.jogar:hover {
+  background-color: #d73500;
+  color: white;
+  transform: scale(1.2);
+}
+
+
+.content {
+  text-align: center;
+  margin-top: 10%;
+  padding: 20px;
+  max-width: 90%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+.carousel {
+  margin: 50px auto;
+  max-width: 800px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05); 
+}
+
+
+.timeline {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 40px;
+  margin: 50px 0;
+  max-width: 800px;
+}
+
+.timeline h2 {
+  text-align: center;
+  color: #ff3c00;
+  margin-bottom: 30px;
+}
+
+.timeline ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin: 20px 0;
+  color: white;
+}
+
+
+.boss-image {
+  display: block;
+  margin: 50px auto;
+  max-width: 80%;
+  height: auto;
+  border: 5px solid #ff3c00;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(255, 60, 0, 0.8);
+  transition: transform 0.3s ease;
+}
+
+.boss-image:hover {
+  transform: scale(1.05);
+}
+
+
+button {
+  background-color: #ff3c00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #d73500;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px; 
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #ff3c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #d73500;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .boss-image {
+    max-width: 100%;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  nav a.jogar {
+    font-size: 1.2rem;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .jogo-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+  }
+
+  .jogo-container iframe {
+    width: 90vw;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .instrucoes {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
+
+
+
+
