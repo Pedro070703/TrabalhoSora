@@ -18,17 +18,27 @@
   </header>
 
   
-  <form>
+  <form onsubmit="return validarFormulario()">
     <h2>Entre em Contato</h2>
     <input type="text" id="nome" placeholder="Seu nome" required />
     <div id="nome-erro" style="color: red; font-size: 0.9rem; display: none;">O nome deve conter apenas letras!</div>
     <input type="email" id="email" placeholder="Seu email" required />
     <textarea id="mensagem" placeholder="Sua mensagem" maxlength="150" required></textarea>
+    <div id="contador" style="text-align: right; font-size: 0.9rem; color: white;">0/150</div>
     <button type="submit">Enviar</button>
   </form>
 
 
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="fecharPopup()">&times;</span>
+      <h3>Mensagem Enviada com Sucesso!</h3>
+      <p>Obrigado por entrar em contato. Nossa equipe responderá em breve.</p>
+      <button onclick="fecharPopup()">Fechar</button> 
+    </div>
+  </div>
 
+  <script src="js/script.js"></script>
 
   <footer>
     <p>© 2025 Jogo da Sora. Todos os direitos reservados.</p>
