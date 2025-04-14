@@ -255,6 +255,22 @@ footer a:hover {
   }
 }
 
+form {
+  max-width: 610px; 
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 60, 0, 0.8); 
+  width: 100%; 
+}
+
+form h2 {
+  text-align: center;
+  color: #ff3c00; 
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
 
 
 
